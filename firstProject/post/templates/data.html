@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form action="/submit/" method="post">
+    {%csrf_token%}
+    <label for="">Enter Name :</label>
+    <input type="text" name="Username" id ="">
+
+    <label for="">Enter Phone no</label>
+    <input type="phoneno" name="phoneno" id="">
+
+    <input type="submit" value="Submit">
+    
+   </form> 
+
+
+    {%if username and phoneno%}
+   <p>Value from form is {{username}}</p>
+   <p>Phone no is {{phoneno}}</p>
+
+   {%endif%}
+
+   
+</body>
+</html>

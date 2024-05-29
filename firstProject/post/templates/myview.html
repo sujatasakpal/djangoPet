@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="{% url 'classview' %}" method="post" >
+        {%csrf_token%}
+        <label for="">Enter Username</label>
+        <input type="text" name="username" id="">
+
+        <label for="">Enter City</label>
+        <input type="text" name="city" id="">
+
+        <label for="">Enter number</label>
+        <input type="number" name="number">
+
+        <input type="submit" name="" id=>
+    </form>
+    {%if username%}
+        <p>My name is {{username}}</p>
+    {%endif%}
+
+    {%if city%}
+        <p>I Live in {{city}}</p>
+    {%endif%}
+
+    {%if number%}
+
+    <p>My number is{{number}}</p>
+
+    {%endif%}
+</body>
+</html>

@@ -1,0 +1,13 @@
+{%extends 'base.html'%}
+
+{%block content%}
+{%for product in royal_canin%}
+    {%include 'product_card.html' with obj=product%}
+
+
+
+{%endfor%}
+
+
+
+{%endblock%}

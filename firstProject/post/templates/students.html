@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% for k,v in students.items%}
+    <hr>
+        <p>key:{{k}}</p>
+        <p>counter:{{forloop.counter}} reverse counter: {{forloop.revcounter}}</p>
+        <p>{{forloop.last}}</p>
+        <hr>
+        {% for k1,v1 in v.items%}
+
+            <p>{{k1}} - {{v1}}</p>
+
+
+         {%endfor%}
+
+
+
+    {%endfor%}
+    
+</body>
+</html>
